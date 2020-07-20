@@ -182,6 +182,7 @@ public class JsonHttpCommandHandler {
   public void addNewUsedDefinedMapping(String commandName, HandlerFactory factory) {
     ResultConfig config = new ResultConfig(commandName, factory, sessions, log);
     configs.put(commandName, config);
+    log.info("add new user defined handler success");
   }
 
   public void addNewMapping(
